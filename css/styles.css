@@ -36,6 +36,7 @@ ul {
 /* Глобальний сброс */
 h2,
 h3,
+h4,
 p,
 ul {
   margin-top: 0;
@@ -155,10 +156,41 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .header-contact .header-contact-link:hover,
 .header-contact .header-contact-link:focus {
   color: var(--accent-color);
+}
+
+.icon-envelope {
+  display: inline-block;
+  content: "";
+  padding: 0;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-size: contain;
+  fill: var(--primary-text-color);
+}
+
+.icon-phone {
+  display: inline-block;
+  content: "";
+  padding: 0;
+  margin-right: 10px;
+  width: 16px;
+  height: 10px;
+  background-size: contain;
+  fill: var(--primary-text-color);
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--accent-color);
+}
+
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: var(--accent-color);
 }
 
 /* Футер */
@@ -167,6 +199,7 @@ img {
   padding-bottom: 60px;
   background: var(--footer-bcg);
 }
+
 .footer-logo {
   display: block;
   margin: 0 0 20px;
@@ -201,15 +234,74 @@ img {
   color: var(--accent-color);
 }
 
+.slogan{
+  margin-bottom: 20px;
+Font style: 700;
+Font size: 14px;
+Line height: 1.142;
+text-transform: uppercase;
+color: var(--text-white);
+Letter spacing: 0.03em;
+}
+
+.socials{
+  display: flex;
+
+  outline: 1px solid navy;
+}
+
+.social-link{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+}
+
+.social-link:not(last child){
+  margin-right: 10px;
+}
+
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin{
+  width: 20px;
+  height: 20px;
+  fill:var(--text-white)
+}
+
+.join{
+  
+}
+
+
+
 /* Webstudio */
 /* HERO */
 
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--footer-bcg);
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--footer-bcg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/imageoverlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -274,6 +366,24 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.no-hover {
+  display: flex;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  height: 120px;
+  background: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
 }
 
 /* Зайняття */
