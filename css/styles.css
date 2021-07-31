@@ -171,25 +171,25 @@ img {
   background-size: contain;
   fill: var(--primary-text-color);
 }
+.header-contact .header-contact-link:hover .icon-envelope,
+.header-contact .header-contact-link:focus .icon-envelope{
+  fill: var(--accent-color);
+}
+
 
 .icon-phone {
   display: inline-block;
   content: "";
   padding: 0;
   margin-right: 10px;
-  width: 16px;
-  height: 10px;
+  width: 10px;
+  height: 16px;
   background-size: contain;
   fill: var(--primary-text-color);
 }
 
-.icon-envelope:hover,
-.icon-envelope:focus {
-  fill: var(--accent-color);
-}
-
-.icon-phone:hover,
-.icon-phone:focus {
+.header-contact .header-contact-link:hover .icon-phone,
+.header-contact .header-contact-link:focus .icon-phone{
   fill: var(--accent-color);
 }
 
@@ -205,9 +205,6 @@ img {
   margin: 0 0 20px;
   padding: 0;
 }
-/* .item { 
-  margin-bottom: 9px;
- } */
 
 .address-item {
   color: var(--text-white);
@@ -235,7 +232,7 @@ img {
 }
 
 .slogan{
-  margin-bottom: 20px;
+margin-bottom: 20px;
 Font style: 700;
 Font size: 14px;
 Line height: 1.142;
@@ -246,8 +243,6 @@ Letter spacing: 0.03em;
 
 .socials{
   display: flex;
-
-  outline: 1px solid navy;
 }
 
 .social-link{
@@ -258,10 +253,14 @@ Letter spacing: 0.03em;
   background: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
-  outline: 1px solid red;
 }
 
-.social-link:not(last child){
+.social-link:hover,
+.social-link:focus{
+  background:var(--accent-color)
+}
+
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -271,14 +270,19 @@ Letter spacing: 0.03em;
 .icon-linkedin{
   width: 20px;
   height: 20px;
-  fill:var(--text-white)
+  fill:var(--text-white);
 }
-
 .join{
-  
+  margin-left: 70px;
+ }
+
+
+
+.flexible{
+  display: flex;
+  justify-content:flex-start ;
+  align-items:baseline;
 }
-
-
 
 /* Webstudio */
 /* HERO */
@@ -429,7 +433,12 @@ Letter spacing: 0.03em;
   background-color: #ffffff;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
+
 .team-item {
   margin-bottom: 10px;
   color: var(--title-color);
@@ -439,12 +448,112 @@ Letter spacing: 0.03em;
 }
 .profession {
   margin-top: 10px;
-
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
 }
+.socialnets{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  
+}
+
+.net-item:not(:last-child){
+margin-right: 10px;
+}
+
+.members-social-link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background:#ffffff;
+}
+
+.members-icon-instagram,
+.members-icon-twitter,
+.members-icon-facebook,
+.members-icon-linkedin{
+  width: 20px;
+  height: 20px;
+  fill:#AFB1B8;
+}
+
+.members-social-link:hover,
+.members-social-link:focus {
+  background: var(--accent-color);
+}
+
+.members-social-link:hover .members-icon-instagram,
+.members-social-link:focus .members-icon-instagram{
+  fill:#ffffff;
+}
+.members-social-link:hover .members-icon-twitter,
+.members-social-link:focus .members-icon-twitter{
+  fill:#ffffff;
+}
+.members-social-link:hover .members-icon-facebook,
+.members-social-link:focus .members-icon-facebook{
+  fill:#ffffff;
+}
+.members-social-link:hover .members-icon-linkedin,
+.members-social-link:focus .members-icon-linkedin{
+  fill:#ffffff;
+}
+
+
+
+/* Клієнти */
+.clients-title{
+  margin-bottom: 50px;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}
+.companies{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.companies-item:not(:last-child){
+  margin-right: 30;
+}
+.companies-item{
+  flex-basis: calc((100% - 180px) / 6);
+}
+
+.icon{
+  fill: #AFB1B8;
+  width:106px ;
+  height:60px ;
+}
+.company-link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.company-link:hover .icon,
+.company-link:focus .icon{
+  fill:var(--accent-color);  
+}
+.company-link:hover,
+.company-link:focus{
+  border: 1px solid var(--accent-color)
+}
+
 
 /* Portfolio */
 
