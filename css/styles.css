@@ -587,6 +587,9 @@ margin-right: 10px;
 .primary-button:focus {
   color: var(--text-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .choise:not(:last-child) {
@@ -637,10 +640,12 @@ margin-right: 10px;
   margin-bottom: 0;
 }
 
-/* .portfolio-link:hover, 
-.portfolio-link:focus 
-  visibility: hidden;
-}*/
+.portfolio-link:hover, 
+.portfolio-link:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+  
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
